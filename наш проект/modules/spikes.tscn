@@ -1,0 +1,71 @@
+[gd_scene load_steps=14 format=3 uid="uid://dlv4cvi7hy5vc"]
+
+[ext_resource type="PackedScene" uid="uid://djgjjflcm1jla" path="res://modules/spikes.glb" id="1_3mytk"]
+[ext_resource type="Texture2D" uid="uid://fh37nv0gngew" path="res://modules/KtEegxkop7w.jpg" id="2_o6si0"]
+[ext_resource type="Script" path="res://modules/module.gd" id="2_yovlv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lyp62"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m71od"]
+albedo_texture = ExtResource("2_o6si0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tebda"]
+albedo_texture = ExtResource("2_o6si0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4yt8o"]
+albedo_texture = ExtResource("2_o6si0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nopj2"]
+albedo_texture = ExtResource("2_o6si0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x2mlg"]
+albedo_texture = ExtResource("2_o6si0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qhj4r"]
+albedo_texture = ExtResource("2_o6si0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0nass"]
+albedo_texture = ExtResource("2_o6si0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wm61g"]
+albedo_texture = ExtResource("2_o6si0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ne6x7"]
+albedo_texture = ExtResource("2_o6si0")
+
+[node name="spikes" instance=ExtResource("1_3mytk")]
+transform = Transform3D(0.36, 0, 0, 0, 0.36, 0, 0, 0, 0.36, 1.61006, -1.2324, 1.57997)
+script = ExtResource("2_yovlv")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(5.32372, 0, 0, 0, 3.51693, 0, 0, 0, 5.32372, -0.664167, 3.25463, -1.78853)
+shape = SubResource("BoxShape3D_lyp62")
+
+[node name="Конус" parent="." index="1"]
+material_override = SubResource("StandardMaterial3D_m71od")
+
+[node name="Конус_001" parent="." index="2"]
+material_override = SubResource("StandardMaterial3D_tebda")
+
+[node name="Конус_002" parent="." index="3"]
+material_override = SubResource("StandardMaterial3D_4yt8o")
+
+[node name="Конус_003" parent="." index="4"]
+material_override = SubResource("StandardMaterial3D_nopj2")
+
+[node name="Конус_004" parent="." index="5"]
+material_override = SubResource("StandardMaterial3D_x2mlg")
+
+[node name="Конус_005" parent="." index="6"]
+material_override = SubResource("StandardMaterial3D_qhj4r")
+
+[node name="Конус_006" parent="." index="7"]
+material_override = SubResource("StandardMaterial3D_0nass")
+
+[node name="Конус_007" parent="." index="8"]
+material_override = SubResource("StandardMaterial3D_wm61g")
+
+[node name="Конус_008" parent="." index="9"]
+material_override = SubResource("StandardMaterial3D_ne6x7")

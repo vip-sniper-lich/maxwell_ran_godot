@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://6abwxb7jw31o"]
+
+[ext_resource type="PackedScene" uid="uid://6pqqdf2ic0wb" path="res://modules/Maxwell The Catфтш.glb" id="1_gc5xn"]
+
+[node name="Maxwell The Catфтш" instance=ExtResource("1_gc5xn")]
+
+[node name="Цилиндр" parent="." index="1"]
+transform = Transform3D(-2.75068, -0.00262637, -2.47292, -2.31651, 0.0238335, 2.93534, 0.0394159, 1.21743, -0.0627996, 3.60738, -0.517205, 18.5755)
+
+[node name="Цилиндр_001 " parent="." index="2"]
+transform = Transform3D(-3.59616, 0.0133062, -0.00756333, -0.00644189, 0.0199375, 3.83816, 0.0394108, 1.21743, -0.0627737, 3.9207, -0.0229529, 0.019148)
+
+[node name="Цилиндр_004" parent="." index="5"]
+transform = Transform3D(-2.40151, -0.0059181, -2.85737, -2.67678, 0.0232373, 2.56261, 0.0394182, 1.21743, -0.0628031, -15.8511, -0.0229529, 0.019148)
+
+[node name="Цилиндр_005" parent="." index="6"]
+transform = Transform3D(-2.39757, -0.0559088, -2.85576, -2.67507, -0.0281528, 2.56416, -0.17216, 1.21606, -0.0719326, -16.1645, -0.517205, 18.5755)

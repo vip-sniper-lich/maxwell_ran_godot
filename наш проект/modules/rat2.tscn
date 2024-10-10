@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bke53chifxr0u"]
+
+[ext_resource type="PackedScene" uid="uid://dm4mohtyyvtd5" path="res://modules/rat.glb" id="1_73why"]
+[ext_resource type="Script" path="res://modules/module.gd" id="2_lqsgq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xq0ml"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_73why")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 0, 0, 0.156187)
+script = ExtResource("2_lqsgq")
+
+[node name="Skeleton3D" parent="Sketchfab_model/185a73e9d0314a3ab38ad68c4a69e588_fbx/Object_2/RootNode/Object_4" index="0"]
+bones/2/rotation = Quaternion(0, 0.0314108, 0, 0.999507)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/185a73e9d0314a3ab38ad68c4a69e588_fbx/Object_2/RootNode/Object_4/Skeleton3D" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/185a73e9d0314a3ab38ad68c4a69e588_fbx/Object_2/RootNode/Object_4/Skeleton3D/StaticBody3D" index="0"]
+transform = Transform3D(203.492, -3.63507e-27, -1.81899e-11, 2.42338e-27, 203.492, 1.30371e-27, 1.09139e-11, 7.76996e-28, 341.436, -5.72205e-06, 17.8359, -40.4709)
+shape = SubResource("BoxShape3D_xq0ml")
